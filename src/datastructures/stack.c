@@ -32,3 +32,10 @@ int pop(stack *s) {
     printf("Popped element: %d\n", popped);
     return popped;
 }
+void peek(stack *s) {
+    if (isEmpty(s)) {
+        printf("Stack is empty\n");
+        return;
+    }
+    printf("Top element: %d\n", s->arr[s->top]);
+}

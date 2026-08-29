@@ -1,12 +1,37 @@
-#include "stack.c"
+#include "reverse-linked-list.c"
+#include <stdio.h>
+#include <stdlib.h>
 int main() {
-    stack s;
-    initialize(&s);
-    push(&s, 10);
-    push(&s, 20);
-    push(&s, 30);
-    pop(&s);
-    pop(&s);
-    pop(&s);
+struct Node* head= NULL;
+struct Node* second= NULL;
+struct Node* third= NULL;
+
+head = (struct Node*)malloc(sizeof(struct Node));
+second = (struct Node*)malloc(sizeof(struct Node));
+third = (struct Node*)malloc(sizeof(struct Node));
+
+head->data=1;
+head->next=second;
+second->data=2;
+second->next=third;
+third->data=3;
+third->next=NULL;
+
+struct Node* reference=head;
+// Print original linked list
+printf("Original linked list: ");
+while (head != NULL) {
+    printf("%d -> ", head->data);
+    head = head->next;
+  
+  }
+printf("\n Reversed linked list: ");
+struct Node* mynext=reverse_linked_list(reference);
+while (mynext != NULL) {
+    printf("%d -> ", mynext->data);
+    mynext = mynext->next;
+  
+  }
+
   return 0;
 }
