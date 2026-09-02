@@ -10,6 +10,8 @@ This repository is used to:
 - Practice problems from LeetCode and similar sources
 - Build muscle memory for common patterns (two pointers, sliding window, recursion, dynamic programming, and more)
 - Experiment with small C programs and concepts
+- Then Use the combined Knowledge to Implement Already Available low level tools and derive insights.
+#### Note : I finished Data Structures and Algorithms in a separate repository but this will as well be inclusive of those that matter but majorly this is meant for building already available(variants and modifications) low-level tools 
 
 ## Requirements
 
