@@ -1,4 +1,4 @@
-#include "./src/algorithms/recursions/factorial.h"
+#include "include/factorial.h"
 #include <stdio.h>
 int main() {
 int result = factorial(5);   
